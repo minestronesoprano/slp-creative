@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>SunshineMail | Regarding Recent Events - Caseload</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    	body{
+    margin-top:20px;
+    background:#eee;
+
+}
+
+
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.flex-wrap { flex-wrap: wrap !important; }
+/* EMAIL */
+.email {
+    padding: 20px 10px 15px 10px;
+	font-size: 1em;
+}
+
+.email .btn.search {
+	font-size: 0.9em;
+}
+
+.email h2 {
+	margin-top: 0;
+	padding-bottom: 8px;
+}
+
+.email .nav.nav-pills > li > a {
+	border-top: 3px solid transparent;
+}
+
+.email .nav.nav-pills > li > a > .fa {
+	margin-right: 5px;
+}
+
+.email .nav.nav-pills > li.active > a,
+.email .nav.nav-pills > li.active > a:hover {
+	background-color: #f6f6f6;
+	border-top-color: #3c8dbc;
+}
+
+.email .nav.nav-pills > li.active > a {
+	font-weight: 600;
+}
+
+.email .nav.nav-pills > li > a:hover {
+	background-color: #f6f6f6;
+}
+
+.email .nav.nav-pills.nav-stacked > li > a {
+	color: #666;
+	border-top: 0;
+	border-left: 3px solid transparent;
+	border-radius: 0px;
+}
+
+.email .nav.nav-pills.nav-stacked > li.active > a,
+.email .nav.nav-pills.nav-stacked > li.active > a:hover {
+	background-color: #f6f6f6;
+	border-left-color: #3c8dbc;
+	color: #444;
+}
+
+.email .nav.nav-pills.nav-stacked > li.header {
+	color: #777;
+	text-transform: uppercase;
+	position: relative;
+	padding: 0px 0 10px 0;
+}
+
+.email table {
+	font-weight: 600;
+}
+
+.email table a {
+	color: #666;
+}
+
+.email table tr.read > td {
+	background-color: #f6f6f6;
+}
+
+.email table tr.read > td {
+	font-weight: 400;
+}
+
+.email table tr td > i.fa {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.email table tr td > i.fa-star {
+	color: #f39c12;
+}
+
+.email table tr td > i.fa-bookmark {
+	color: #e74c3c;
+}
+
+.email table tr > td.action {
+	padding-left: 0px;
+	padding-right: 2px;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    color: #666666;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.grid .grid-header:after {
+    clear: both;
+}
+
+.grid .grid-header span,
+.grid .grid-header > .fa {
+    display: inline-block;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5em;
+    float: left;
+}
+
+.grid .grid-header span {
+    padding: 0 5px;
+}
+
+.grid .grid-header > .fa {
+    padding: 5px 10px 0 0;
+}
+
+.grid .grid-header > .grid-tools {
+    padding: 4px 10px;
+}
+
+.grid .grid-header > .grid-tools a {
+    color: #999999;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.grid .grid-header > .grid-tools a:hover {
+    color: #666666;
+}
+
+.grid .grid-body {
+    padding: 15px 20px 15px 20px;
+    font-size: 0.9em;
+    line-height: 1.9em;
+}
+
+.grid .full {
+    padding: 0 !important;
+}
+
+.grid .transparent {
+    box-shadow: none !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+
+.grid.top.black > .grid-header {
+    border-top-color: #000000 !important;
+}
+
+.grid.bottom.black > .grid-body {
+    border-bottom-color: #000000 !important;
+}
+
+.grid.top.blue > .grid-header {
+    border-top-color: #007be9 !important;
+}
+
+.grid.bottom.blue > .grid-body {
+    border-bottom-color: #007be9 !important;
+}
+
+.grid.top.green > .grid-header {
+    border-top-color: #00c273 !important;
+}
+
+.grid.bottom.green > .grid-body {
+    border-bottom-color: #00c273 !important;
+}
+
+.grid.top.purple > .grid-header {
+    border-top-color: #a700d3 !important;
+}
+
+.grid.bottom.purple > .grid-body {
+    border-bottom-color: #a700d3 !important;
+}
+
+.grid.top.red > .grid-header {
+    border-top-color: #dc1200 !important;
+}
+
+.grid.bottom.red > .grid-body {
+    border-bottom-color: #dc1200 !important;
+}
+
+.grid.top.orange > .grid-header {
+    border-top-color: #f46100 !important;
+}
+
+.grid.bottom.orange > .grid-body {
+    border-bottom-color: #f46100 !important;
+}
+
+.grid.no-border > .grid-header {
+    border-bottom: 0px !important;
+}
+
+.grid.top > .grid-header {
+    border-top-width: 4px !important;
+    border-top-style: solid !important;
+}
+
+.grid.bottom > .grid-body {
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+}
+
+.email-head {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+.email-head-subject {
+    padding: 25px 25px;
+    border-bottom: 1px solid #e8ebf1;
+}
+
+@media (max-width: 767px) {
+    .email-head-subject {
+        padding: 25px 10px;
+    }
+}
+
+.email-head-subject .title {
+    display: block;
+    font-size: 1.3em;
+}
+
+.email-head-subject .title a.active .icon {
+    color: #fbbc06;
+}
+
+.email-head-subject .title a .icon {
+    color: silver;
+    margin-right: 6px;
+}
+
+.email-head-subject .title a .icon svg {
+    width: 18px;
+}
+
+.email-head-subject .icons {
+    font-size: 14px;
+    float: right;
+}
+
+.email-head-subject .icons .icon {
+    color: #000;
+    margin-left: 12px;
+}
+
+.email-head-subject .icons .icon svg {
+    width: 18px;
+}
+
+.email-head-sender {
+    padding: 13px 25px;
+}
+
+@media (max-width: 767px) {
+    .email-head-sender {
+        padding: 25px 10px;
+    }
+}
+
+.email-head-sender .avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.email-head-sender .date {
+    float: right;
+    font-size: 12px;
+}
+
+.email-head-sender .avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.email-head-sender .avatar img {
+    width: 36px;
+}
+
+.email-head-sender .sender > a {
+    color: #000;
+}
+
+.email-head-sender .sender span {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.email-head-sender .sender .actions {
+    display: inline-block;
+    position: relative;
+}
+
+.email-head-sender .sender .actions .icon {
+    color: #686868;
+    margin-left: 7px;
+}
+
+.email-head-sender .sender .actions .icon svg {
+    width: 18px;
+}
+
+.email-body {
+    background-color: transparent;
+    border-top: 1px solid #e8ebf1;
+    padding: 30px 28px;
+}
+
+@media (max-width: 767px) {
+    .email-body {
+        padding: 30px 10px;
+    }
+}
+    </style>
+</head>
+<body>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+<div class="row">
+
+<div class="col-md-12">
+<div class="grid email">
+<div class="grid-body">
+<div class="row">
+
+<div class="col-md-3">
+<h2 class="grid-title"><a href="./index.html"><i class="fa fa-inbox"></i> SunshineMail</h2>
+<a class="btn btn-block btn-primary" data-toggle="modal" data-target="#compose-modal"><i class="fa fa-pencil"></i>&nbsp;&nbsp;NEW MESSAGE</a>
+<hr>
+<div>
+<ul class="nav nav-pills nav-stacked">
+<li class="header">Folders</li>
+<li class="active"><a href="./index.html"><i class="fa fa-inbox"></i> Inbox (14)</a></li>
+<li><a href="#"><i class="fa fa-star"></i> Starred</a></li>
+<li><a href="#"><i class="fa fa-bookmark"></i> Important</a></li>
+<li><a href="#"><i class="fa fa-mail-forward"></i> Sent</a></li>
+<li><a href="#"><i class="fa fa-pencil-square-o"></i> Drafts</a></li>
+<li><a href="#"><i class="fa fa-folder"></i> new cases (9)</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="col-md-9">
+<div class="row">
+<div class="col-sm-6">
+<label style="margin-right: 8px;" class>
+<div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" id="check-all" class="icheck" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+</label>
+<div class="btn-group">
+<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+Action <span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Mark as read</a></li>
+<li><a href="#">Mark as unread</a></li>
+<li><a href="#">Mark as important</a></li>
+<li class="divider"></li>
+<li><a href="#">Report spam</a></li>
+<li><a href="#">Delete</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-6 search-form">
+<form action="#" class="text-right">
+<div class="input-group">
+<input type="text" class="form-control input-sm" placeholder="Search">
+<span class="input-group-btn">
+<button type="submit" name="search" class="btn_ btn-primary btn-sm search"><i class="fa fa-search"></i></button></span>
+</div>
+</form>
+</div>
+</div>
+<div class="padding"></div>
+<div class="table-responsive">
+
+  <div class="email-head">
+  <div class="email-head-subject">
+  <div class="title d-flex align-items-center justify-content-between">
+  <div class="d-flex align-items-center" font-size="0.99em">
+  <a class="active" href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star text-primary-muted"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span></a>
+  <span>Regarding Recent Events - Caseload</span>
+  </div>
+  <div class="icons">
+  <a href="#" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share text-muted hover-primary-muted" data-toggle="tooltip" title data-original-title="Forward"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg></a>
+  <a href="#" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer text-muted" data-toggle="tooltip" title data-original-title="Print"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg></a>
+  <a href="#" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash text-muted" data-toggle="tooltip" title data-original-title="Delete"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+  </a>
+  </div>
+  </div>
+  </div>
+  <div class="email-head-sender d-flex align-items-center justify-content-between flex-wrap">
+  <div class="d-flex align-items-center">
+  <div class="sender d-flex align-items-center">
+  <a href="#">Bob Weist (superintendent@sunshine.edu)</a> <span>to</span><a href="#">me</a>
+  </div>
+  </div>
+  <div class="date">January 20, 4:25 PM</div>
+  </div>
+  </div>
+
+
+  <div class="email-body">
+  <p>Hello Mariya,</p>
+  <br>
+<p>I hope you have been well. <br>As you may have heard, Allison has decided to leave the SLP department at Sunshine Primary, leaving about 25 or so kids in need of an SLP. We are currently on the search for another SLP to fulfill her duties, and rest assured, we will find one to alleviate any stress or pressure you may be feeling. Unfortunately, at this stage, we are obligated by school district rules to see all kids who are referred to SLPs at least once a week. This would mean that you will have to take up her caseload for now, and ensure that the kids still have access to an SLP. <br>I know you may feel stressed, just know that we are here to help. Please contact me if you have any questions.</p>
+<br>
+  <p>All the best,<br><strong>Bob Weist, M.Ed.</strong> (he/him)<br>Superintendent for Gerald School District</p>
+  </div>
+
+</div>
+</div>
+
+
+<div class="modal fade" id="compose-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-wrapper">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header bg-blue">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h4 class="modal-title"><i class="fa fa-envelope"></i> Compose New Message</h4>
+</div>
+<form action="#" method="post">
+<div class="modal-body">
+<div class="form-group">
+<input name="to" type="email" class="form-control" placeholder="To">
+</div>
+<div class="form-group">
+<input name="cc" type="email" class="form-control" placeholder="Cc">
+</div>
+<div class="form-group">
+<input name="bcc" type="email" class="form-control" placeholder="Bcc">
+</div>
+<div class="form-group">
+<input name="subject" type="email" class="form-control" placeholder="Subject">
+</div>
+<div class="form-group">
+<textarea name="message" id="email_message" class="form-control" placeholder="Message" style="height: 120px;"></textarea>
+</div>
+<div class="form-group"> <input type="file" name="attachment">
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Discard</button>
+<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-envelope"></i> Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
